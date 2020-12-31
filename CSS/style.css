@@ -79,6 +79,8 @@ h1 {font-size: 22px;}
   /*this section is for about.html*/
 .introduction {clear: both;}
 .introduction {text-align: center;}
+.cv-button {text-align: center;}
+.cv-button {padding-left: 30px;}
 .introduction-list {list-style-type: none;}
 .Little-Rock {text-align: center;}
 .Little-Rock {padding: 10px}
