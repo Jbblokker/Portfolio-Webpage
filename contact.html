@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="page-header">
-      <img src="img/logo.jpg" alt="page-header__item">
+      <img src="img/name-logo.png" alt="this is my logo" class="page-header__item">
       <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -31,29 +31,23 @@
     </nav>
     </header>
     <div>
-     <h1>Contact</h1>
-      CareerFoundry gmbH<br>
-      Köpenicker Str. 126<br>
-      1079 Berlin<br>
-      Deutschland<br>
-      <br>
-      Tel <a href="Telephone:+491234567"> My Telephone number +49 30 4849 2016</a><br>
-      Skype <a href="skype:hello.careerfoundry"> hello.CareerFoundry</a><br>
-      <a href="mailto:office@careerfoundry.com?subject=Contact&body=I%20would%20like%20to%20know%20more%20information%20about%20your%20work.
-        ">office@careerfoundry.com</a>
+     <h1 class="contact-header">Contact</h1>
     </div>
-    <div>
-      <form action="" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email">email:</label>
+    <div class="container-contact">
+      <form action="**" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail:</label>
       <input type="email" id="contact-email" required>
-
+      <br>
       <label class="standard-label" for="contact-telephone">Telephone: </label>
       <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
+      <br>
       <label class="standard-label" for="contact-message">Message: </label>
-      <id="contact-message" textarea required maxlength="240"></textarea>
-      <input type="submit" id="contact-message" value="send message"></form>
-     </div>
-    <div>
+      <textarea required maxlength="240"></textarea>
+      <br>
+      <div class="about-button">
+      <input type="submit" class="button" id="contact-message" value="Send Message">
+      </div>
+      </form>
+    </div>
   </body>
 </html>
