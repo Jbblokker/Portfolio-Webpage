@@ -66,6 +66,8 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 
 .page-footer {clear: both; display: flex; flex-direction: column; text-align: center;}
 
+.github{text-decoration: none;}
+
 .profile { max-width: 700px; margin: 0 auto;}
 
 .button-section { max-width: 700px; margin: 0 auto; border-left: 10px;}
@@ -88,6 +90,8 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 /* end grid fallback*/
 .projects {display: grid;}
 
+.projects {margin: 0 3rem;}
+
 .projects { display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 20px;}
@@ -99,11 +103,23 @@ grid-gap: 20px;}
    /*this secotion is for contact.html*/
 .contact-header{text-align: center;}
 
+.container-contact {display: grid; grid-template-columns: repeat(2,100px);
+   justify-content: center; grid-gap: 10px; margin-right: 215px;}
+
+.container-contact
+
+.grid-about { align-self: center;}
+
+
+
+
 .container-contact {text-align: center;}
 
-.standard-label{padding: 20px;}
+.standard-label{font-weight: bold;}
 
-.contact-button{ padding-top: 10px;}
+.information-input {border: 2px solid #5b855d; border-radius: 10%; padding: 0.9em;}
+
+.about-button{ text-align: center;padding-top: 10px;}
 
 .standard-label {text-align: right;
 width: 100px; display: inline-block;
@@ -115,7 +131,7 @@ font-weight: bold; color: var(--header-color);}
 
 .introduction {clear: both;}
 
-.introduction {text-align: center;}
+.introduction {text-align: center; margin: 0 3rem;}
 
 .cv-button {text-align: center;}
 
@@ -123,7 +139,7 @@ font-weight: bold; color: var(--header-color);}
 
 .introduction-list {list-style-type: none;}
 
-.Little-Rock {text-align: center;}
+.Little-Rock {max-width: 500px; margin: 0 auto;}
 
 .Little-Rock {padding: 10px}
 
