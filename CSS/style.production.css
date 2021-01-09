@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box;}
 * {-webkit-box-sizing: border-box;box-sizing: border-box;}
 body {background-color: #ffffff;}
@@ -73,6 +74,8 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 
 .page-footer {clear: both; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center;}
 
+.github{text-decoration: none;}
+
 .profile { max-width: 700px; margin: 0 auto;}
 
 .button-section { max-width: 700px; margin: 0 auto; border-left: 10px;}
@@ -95,6 +98,8 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 /* end grid fallback*/
 .projects {display: -ms-grid;display: grid;}
 
+.projects {margin: 0 3rem;}
+
 .projects { display: -ms-grid; display: grid;
 -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 grid-template-columns: 1fr 1fr 1fr;
@@ -107,11 +112,20 @@ grid-gap: 20px;}
    /*this secotion is for contact.html*/
 .contact-header{text-align: center;}
 
+.container-contact {display: -ms-grid;display: grid; -ms-grid-columns: 100px 10px 100px; grid-template-columns: repeat(2,100px);
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center; grid-gap: 10px; margin-right: 215px;}
+
+.grid-about { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center;}
+
 .container-contact {text-align: center;}
 
-.standard-label{padding: 20px;}
+.standard-label{font-weight: bold;}
 
-.contact-button{ padding-top: 10px;}
+.information-input {border: 2px solid #5b855d; border-radius: 10%; padding: 0.9em;}
+
+.about-button{ text-align: center;padding-top: 10px;}
 
 .standard-label {text-align: right;
 width: 100px; display: inline-block;
@@ -123,7 +137,7 @@ font-weight: bold; color: var(--header-color);}
 
 .introduction {clear: both;}
 
-.introduction {text-align: center;}
+.introduction {text-align: center; margin: 0 3rem;}
 
 .cv-button {text-align: center;}
 
@@ -131,7 +145,7 @@ font-weight: bold; color: var(--header-color);}
 
 .introduction-list {list-style-type: none;}
 
-.Little-Rock {text-align: center;}
+.Little-Rock {max-width: 500px; margin: 0 auto;}
 
 .Little-Rock {padding: 10px}
 
@@ -185,10 +199,11 @@ font-weight: bold; color: var(--header-color);}
 @keyframes cloud-move-reverse {from {-webkit-transform: translate(250px, 48px);transform: translate(250px, 48px); fill: #0000ff;}
   to {-webkit-transform: translate(20px, 48px);transform: translate(20px, 48px); fill: #0f0b75;}}
 
-@media all and (max-width: 500px) {.projects {-ms-grid-columns: 1fr;grid-template-columns: 1fr;}}
+@media all and (max-width: 500px) {.projects {-ms-grid-columns: 1fr;grid-template-columns: 1fr;}
 
 @media all and (min-width: 500px) and (max-width: 750px)
- {.projects {-ms-grid-columns: 1fr 20px 1fr;grid-template-columns: 1fr 1fr;}}
+ {.projects {-ms-grid-columns: 1fr 20px 1fr;grid-template-columns: 1fr 1fr;}
 
-@media all and (max-width: 750px;) {.projects {grid-gap: 10px;} .grid__item:last-child
+@media all and (max-width: 750px;) {.projects {grid-gap: 10px;} .grid__item:last-child}}
+
 {grid-column: auto / auto; grid-row: auto / auto;} h1 { font-size: 22px;}}

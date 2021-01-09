@@ -106,12 +106,7 @@ grid-gap: 20px;}
 .container-contact {display: grid; grid-template-columns: repeat(2,100px);
    justify-content: center; grid-gap: 10px; margin-right: 215px;}
 
-.container-contact
-
 .grid-about { align-self: center;}
-
-
-
 
 .container-contact {text-align: center;}
 
