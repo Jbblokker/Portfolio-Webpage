@@ -8,54 +8,56 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="background">
     <header class="page-header">
       <img src="img/name-logo.png" alt="this is my logo" class="page-header__item">
       <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item
+        <li class="animate__animated animate__fadeInUp" role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list-item
           navigation-list__item--active">Home</a>
         </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        <li class="animate__animated animate__fadeInUp" role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list-item">About</a>
         </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        <li class="animate__animated animate__fadeInUp" role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list-item">Work</a>
         </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__items">Contact</a>
+        <li class="animate__animated animate__fadeInUp" role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list-items">Contact</a>
         </li>
       </ul>
     </nav>
     </header>
     <div class="contact-header">
-     <h1 class="animate__animated animate__backInDown">Contact</h1>
+     <h1 class="animate__animated animate__fadeInUp">Contact</h1>
     </div>
     <div class="container-contact">
+      <form class="formemail" action="https://formsubmit.co/6a5788009a4db44a2d83595286117404" method="POST">
       <div class="grid-about">
-        <label class="standard-label" for="contact-email">Email: </label>
-      </div>
-      <div class="grid-about" class="animate__animated animate__backInDown">
-        <input class="information-input" type="email" id="contact-email" required>
+        <label class="standard-label" for="contact-email"> </label>
       </div>
       <div class="grid-about">
-        <label class="standard-label" for="contact-telephone">Telephone: </label>
+        <input class="information-input" type="email" placeholder="Your email here" id="contact-email" required>
       </div>
       <div class="grid-about">
-        <input class= "information-input" type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        <label class="standard-label" for="contact-telephone"> </label>
       </div>
       <div class="grid-about">
-        <label class="standard-label" for="contact-message">Message: </label>
+        <input class= "information-input" placeholder="Telephone number" type="tel" id="contact-telephone">
+      </div>
+      <div class="grid-about">
+        <label class="standard-label" for="contact-message">  </label>
       </div>
       <div class="grid">
-        <textarea required maxlength="240" class="information-input"></textarea>
+        <textarea required maxlength="240" placeholder="Your message here" class="information-input"></textarea>
       </div>
     </div>
      <div class="about-button">
-       <input type="submit" class="button" id="contact-message" value="Send Message">
+       <button  type="submit">Send</button>
+     </form>
     </div>
   </body>
 </html>

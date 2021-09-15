@@ -1,4 +1,3 @@
-* { box-sizing: border-box;}
 * {box-sizing: border-box;}
 body {background-color: #ffffff;}
 :root {
@@ -9,11 +8,6 @@ body {background-color: #ffffff;}
   --border-color: #000000;
   --header-color: #000000;
 }
-/* clolors used
-text color (dark gray): #2b2b2b:
-Primary Color (purple): #357b70:
-Secondary color (orange): #e0b354:
-*/
 
 body {font-family: 'Raleway'; font-weight: 400;}
 
@@ -36,20 +30,20 @@ h3 {font-size: 18px;
 
 .intro, .intro-2{padding-top: 30px;}
 
-a {color:black;}
+a {color:black; }
 
 a:visited {/* visited link*/ color: var(--href-color);}
 
-a:hover, a:focus {/*no underlining when hovering overa link*/
+a:hover, a:focus {/*no underlining when hovering over a link*/
   text-decoration: none;}
 
 a:active {/* selected link */ color: #ffffff;}
 
 button, .button { border: none; display: inline-block;
-  font-family: inherit; background-color: var(--primary-color);
-  color: white; text-decoration: none; padding: 10px; border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3); transition: 0.2s opacity;}
-button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opacity:0.8;}
+  font-family: inherit; background-color:#5b855d;
+  color: white; text-decoration: none; padding: 10px; border-radius: 3px; width: 150px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); transition: 0.20s opacity;}
+button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opacity:0.75;}
 
 .button_secondary { background-color: var(--secondary-color); color: var(--dark-grey);}
 
@@ -57,7 +51,14 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 
 .button-section {padding: 10px}
 
+.background {
+  background: url("../img/littlerock.jpg")
+}
+.background { background-size: cover; background-repeat: no-repeat;  background-attachment: fixed;}
+
 .page-header { border-bottom: 1px solid var(--border-color); background: #5b855d;}
+
+.navigation-list-items { font-weight: bold;}
 
 .page-header__item { border-radius: 75%;}
 
@@ -65,14 +66,20 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
   border-radius: 50%;}
 
 .page-footer {clear: both; display: flex; flex-direction: column; text-align: center;}
+/* design for footer on Work page*/
+.github{text-decoration: none; }
+.github:hover{ opacity: 0.5;}
 
-.github{text-decoration: none;}
+.findme-footer{ color:#ffffff; font-weight: bold;}
+.linkedin:hover{ opacity:0.5;  }
+
+/* end of design for footer work page*/
 
 .profile { max-width: 700px; margin: 0 auto;}
 
 .button-section { max-width: 700px; margin: 0 auto; border-left: 10px;}
 
-.page-header { display: flex; width: 100%; padding: 20px;}
+.page-header { display: flex; width: 100%; padding: 20px;font-weight: bold;}
 
 .page-header__item {flex: 0 1 200px;}
 
@@ -84,7 +91,7 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 
 .work-page{ text-align: center;}
 
-/* strart grid fallback*/
+/* start grid fallback*/
 
 .grid__item {display: inline-block; width: 33%;}
 /* end grid fallback*/
@@ -94,33 +101,39 @@ button:hover, button:focus, .button:hover, .button:focus { cursor: pointer; opac
 
 .projects { display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 20px;}
+grid-gap: 20px; font-weight: bold;}
 
 .grid__item {background-color: var(--dark-grey); min-height: auto;
-  width: auto; margin: 0; padding: 10px}
+  width: auto; margin: 0; padding: 10px; opacity: 0.80; }
 
 .grid__item:last-child {grid-column: 3/3; grid-row: 1/3;}
-   /*this secotion is for contact.html*/
+   /*this section is for contact.html*/
 .contact-header{text-align: center;}
 
-.container-contact {display: grid; grid-template-columns: repeat(2,100px);
-   justify-content: center; grid-gap: 10px; margin-right: 215px;}
+
+.container-contact { padding: 50px; margin: 20px; display: grid; grid-template-columns: repeat(2,100px);
+   justify-content: center; grid-gap: 10px; }
 
 .grid-about { align-self: center;}
 
-.container-contact {text-align: center;}
+.container-contact {text-align: center; padding-bottom: 15px;}
 
 .standard-label{font-weight: bold;}
 
-.information-input {border: 2px solid #5b855d; border-radius: 10%; padding: 0.9em;}
+.information-input {
+  border: 2px solid #5b855d; 
+  border-radius: 10%; padding: 0.9em;
+}
 
-.about-button{ text-align: center;padding-top: 10px;}
+.about-button{ text-align: center;}
 
-.standard-label {text-align: right;
-width: 100px; display: inline-block;
-font-weight: bold; color: var(--header-color);}
+.standard-label {
+width: 100px; display: inline-block; text-align: center;
+font-weight: bold; color: #5b855d;}
 
-.about-button{padding-top: 20px;}
+.standard-input{padding-right: 30px;}
+
+.about-button{padding-top: -15px;}
   /*this section is for about.html*/
 .about-header{text-align: center;}
 
@@ -158,6 +171,7 @@ font-weight: bold; color: var(--header-color);}
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;}
+/* this is the end of about.html*/
 
 @keyframes color-change {0% {fill: #edc655;}
   50% {fill: #fcffad;} 100% {fill: #f76414;}}
@@ -166,10 +180,12 @@ font-weight: bold; color: var(--header-color);}
 @keyframes cloud-move-reverse {from {transform: translate(250px, 48px); fill: #0000ff;}
   to {transform: translate(20px, 48px); fill: #0f0b75;}}
 
-@media all and (max-width: 500px) {.projects {grid-template-columns: 1fr;}
+@media all and (max-width: 500px) {.projects {grid-template-columns: 1fr;}}
 
 @media all and (min-width: 500px) and (max-width: 750px)
- {.projects {grid-template-columns: 1fr 1fr;}
+ {.projects {grid-template-columns: 1fr 1fr;}}
 
-@media all and (max-width: 750px;) {.projects {grid-gap: 10px;} .grid__item:last-child
-{grid-column: auto / auto; grid-row: auto / auto;} h1 { font-size: 22px;}}
+@media all and (max-width: 750px) { .projects {grid-gap: 10px;} .grid__item:last-child
+{grid-column: auto / auto; grid-row: auto / auto;} h1 {font-size: 22px;}}
+
+
