@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>First Webpage</title>
+  <title>My Work</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
     <link rel="shortcut icon" href="./img/my-initals-favicon.svg">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <script src="./work.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="background">
     <header class="page-header">
@@ -32,83 +31,57 @@
       </ul>
     </nav>
     </header>
-  <section>
-    <div class=" work-page">
-      <h2 class="animate__animated animate__fadeInUp">Work</h1>
-    </div>
-   <!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 2</div>
-    <img class="images" src="img/pokedex.JPG" style="width:100%">
-    <div class="text">Pokedex app</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 2</div>
-    <img class="images" src="img\chatapp.jpg" style="width:100%">
-    <div class="text-chat">Chat app</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
- 
-</div>
-  <div class="projects">
-  <div class="grid__item">
-    <h2>Chat-app</h2>
-      <p> Within this project I worked with React Native. I created a chat app that allows 
-        users to share messages, images, and location.
-      </p>
-      <a href="https://github.com/Jbblokker/Chat-app"> See project on GitHub</a>
-      <br>
-      <a href="Professional-profile.pdf">See my case study on this</a>
-  </div>
-  <div class="grid__item">
-      <h2>JavaScript and Bootstrap</h2>
-      <p>This app shows my knowledge on vanilla Javascript and Bootstrap.</p>
-      <a href="https://github.com/Jbblokker/js-app-catchem"> See the project on GitHub</a>
-      <br>
-      <a href="https://jbblokker.github.io/js-app-catchem/"> See the live version</a>
-  </div>
-  <div class="grid__item">
-      <h2>Node.js</h2>
-      <p>I was responsible for creating a movie database with REACT and node.js.
-        </p>
-        <a href="https://github.com/Jbblokker/movie_api"> See project on GitHub</a>
-  </div>
-  <div class="grid__item">
-      <h2>Style guide for portfolio page</h2>
-      <p>Here you can find the style guide I've created for this portfolio page.</p>
-      <a href="https://github.com/Jbblokker/Portfolio-Webpage/tree/main/CSS"> See style guide</a>
-  </div>
+    <section>
+      <div class=" work-page">
+        <h2 class="animate__animated animate__fadeInUp">Work</h2>
+      </div>
+      <div class="projects">
       <div class="grid__item">
-      <h2>Your Project?</h2>
-      <p class="project__text">Can I help you on your next project?</p>
-      <a href="contact.html"> Contact me</a>
-  </div>
-  </div>
-  </section>
-  <footer class="page-footer">
-  <p class="findme-footer">Find me on</p>
-    <div class="social-media">
-    <a class="github" href="https://github.com/Jbblokker">
-      <img class="githubimg" src="img/github_icongreen.svg" alt="github">
-    </a>
-    <a class="linkedin" href="https://www.linkedin.com/in/jonathan-blokker-3b95a2186/">
-      <img class="linkedinimg" src="img/linkedingreen.svg" alt="linkedIn">
-    </a>
-    </div>
-  </footer>
+        <h2>Chat-app</h2>
+          <p> For this app I worked with React Native. I created a chat app that allows 
+            users to share messages, images, and location.
+          </p>
+          <a href="https://github.com/Jbblokker/Chat-app"> See project on GitHub</a>
+          <br>
+          <a href="Professional-profile.pdf">See my case study on this</a>
+      </div>
+      <div class="grid__item">
+          <h2>Pokedex</h2>
+          <p>This Pokedex app shows my knowledge in vanilla Javascript and Bootstrap.
+            Users can view different stats and search for specific Pokemon.
+          </p>
+          <a href="https://github.com/Jbblokker/js-app-catchem"> See the project on GitHub</a>
+          <br>
+          <a href="https://jbblokker.github.io/js-app-catchem/"> See the live version</a>
+      </div>
+      <div class="grid__item">
+          <h2>Rest API</h2>
+          <p>I created an API movie database with REACT. This API stores 
+            user information and the user's favorite movies. Users can view different movies and see information
+            about genres, directors, and movie synopsis. 
+            </p>
+            <a href="https://github.com/Jbblokker/movie_api"> See project on GitHub</a>
+      </div>
+      <div class="grid__item">
+          <h2>CSS for Portfolio-Webpage</h2>
+          <p>Here you can find the style guide I've created for this Portfolio page.</p>
+          <a href="https://github.com/Jbblokker/Portfolio-Webpage/tree/main/CSS"> See style guide</a>
+      </div>
+          <div class="grid__item">
+          <h2>Your Project?</h2>
+          <p class="project__text">Can I help you on your next project?</p>
+          <a class="contact__me" href="contact.html"> Contact me</a>
+          <p class="find__me"> You can also find me here.</p>
+            <div class="social-media">
+            <a class="github" href="https://github.com/Jbblokker">
+            <img class="githubimg" src="img/github_icongreen.svg" alt="github">
+          </a>
+          <a class="linkedin" href="https://www.linkedin.com/in/jonathan-blokker-3b95a2186/">
+            <img class="linkedinimg" src="img/linkedingreen.svg" alt="linkedIn">
+          </a>
+      </div>
+      </div>
+      </section>
   </body>
 </html>
 
