@@ -36,29 +36,26 @@
     </div>
     <div class="container-contact">
       <form class="formemail" action="https://formsubmit.co/6a5788009a4db44a2d83595286117404" method="POST">
-      <div class="grid-about">
-        <label class="standard-label" for="contact-email"> </label>
-      </div>
-      <div class="grid-about">
-        <input class="information-input" type="email" placeholder="Your email here" id="contact-email" required>
-      </div>
-      <div class="grid-about">
-        <label class="standard-label" for="contact-telephone"> </label>
-      </div>
-      <div class="grid-about">
-        <input class= "information-input" placeholder="Telephone number" type="tel" id="contact-telephone">
-      </div>
-      <div class="grid-about">
-        <label class="standard-label" for="contact-message">  </label>
-      </div>
-      <div class="grid">
-        <textarea required maxlength="240" placeholder="Your message here" class="information-input"></textarea>
-      </div>
-      <div >
-        <button class="contact-button" type="submit">Send</button>
-       </div>
+        <div class="grid-about">
+          <input class="information-input" type="email" placeholder="Your email" id="contact-email" name="email" required>
+        </div>
+        <div class="grid-about">
+          <label class="standard-label" for="contact-name"> </label>
+        </div>
+        <div class="grid-about">
+          <input class= "information-input" placeholder="Your name" type="name" name="name" id="contact-name" required>
+        </div>
+        <div class="grid-about">
+          <label class="standard-label" for="contact-message">  </label>
+        </div>
+        <div class="grid">
+          <textarea required maxlength="240" placeholder="Your message" class="information-input" name="message" required></textarea>
+        </div>
+        <div >
+          <button class="contact-button" type="submit">Send</button>
+        </div>
      </form>
-     </div>
+     </div> 
     </div>
     <footer class="page-footer">
       <p class="findme-footer">Find me on</p>
