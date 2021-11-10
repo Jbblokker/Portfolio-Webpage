@@ -1,7 +1,7 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box;}
 * {-webkit-box-sizing: border-box;box-sizing: border-box;}
-body {
-  background-color: #cbcbcf;
+body, body {
+  background-color: #cbcbcf;  
 }
 
 :root {
@@ -25,19 +25,18 @@ body {
   background-color: var(--dark-grey); 
   opacity: 0.80;
   border-radius: 10px;
-  float: left;
+  display: block;
   text-align: center;
   width: 425px;
   padding-bottom: 5px;
-  margin-left: 130px;
+  margin: 0 auto;
   
 }
 
 .profile_portrait {   
-  display: inline-flex;
+  display: block;
   width: 425px; 
- 
-  margin-left: 130px;
+  margin:0 auto;
   border-radius: 10px;
   border: 1px solid #ffffff;
   position: relative;
@@ -225,19 +224,13 @@ button:hover, button:focus, .button:hover, .button:focus {
   width: 33%;
 }
 /* end grid fallback*/
-.projects {
-  display: grid;
-}
-
-.projects {
-  margin: 0 3rem;
-}
 
 .projects { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px; 
   font-weight: bold;
+  margin: 0 3rem;
 }
 
 .grid__item {
@@ -461,12 +454,13 @@ color: #5b855d;
 }
 
 @media all and (min-width: 300px) and (max-width: 750px){
-   .projects {grid-template-columns: 1fr 1fr;}
+   .projects { margin-left: 30px;} 
 }
 
 @media all and (max-width: 850px) { 
   .projects {grid-gap: 10px;} .grid__item:last-child{grid-column: auto / auto; grid-row: auto / auto;} h1 {font-size: 22px;}
 }
 
-/* work styling  */
-
+@media screen and (max-width: 850px) {
+  .profile_portrait, .profile-box, .projects {width: 300px;}
+}
