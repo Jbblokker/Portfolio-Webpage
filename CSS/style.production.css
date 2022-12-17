@@ -1,21 +1,25 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box;}
 * {-webkit-box-sizing: border-box;box-sizing: border-box;}
 body, body {
-  background-color: #cbcbcf;  
+color:#032539
+}
+
+.body_background{
+  background-color: var(--light-white);  
 }
 
 :root {
-  --primary-color: #2e2d40;
-  --secondary-color: #d35400;
-  --dark-grey: #afafb6;
-  --href-color: #000000;
+  --primary-color: #032539;
+  --secondary-color: #1c768f;
+  --light-white: #fbf3f2;
+  --href-color: #fa991c;
   --border-color: #000000;
   --header-color: #000000;
 }
@@ -26,11 +30,10 @@ body {
 }
 
 .profile-box { 
-  border: 1px solid #ffffff;
+  /* border: 1px solid var(--secondary-color); */
   font-size: 18px;
   font-weight: 700;
-  background-color: var(--dark-grey); 
-  opacity: 0.80;
+  color: var(--primary-color) !important; 
   border-radius: 10px;
   display: block;
   text-align: center;
@@ -65,9 +68,14 @@ h3 {
   font-weight: 700;
 }
 
-.index-welcome{
+#welcome{
   font-size: 65px;
+  color: var(--light-white) !important;
   
+}
+
+#signature{
+  width: 25%;
 }
 
 .intro {
@@ -84,12 +92,11 @@ h3 {
 }
 
 a {
-  color:black;
+  color:var(--href-color);
 }
 
 a:visited {
   /* visited link*/ 
-  color: var(--href-color);
 }
 
 a:hover, a:focus {
@@ -99,7 +106,7 @@ a:hover, a:focus {
 
 a:active {
   /* selected link */ 
-  color: #ffffff;
+  color: var(--light-white);
 }
 
  .button { 
@@ -136,28 +143,28 @@ button:hover, button:focus, .button:hover, .button:focus {
   padding: 10px;
 }
 
-.background {
-  background: url("../img/littlerock.jpg");
-}
-.background { 
+
+/* .background { 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
+
+/* .background {
+  background: url("../img/littlerock.jpg");
+} */
 
 .page-header { 
   border-bottom: 1px solid var(--border-color); 
   margin-bottom: 15px;
-  background: #5b855d;
+  background: var(--primary-color);
 }
 
 .navigation-list-items { 
   font-weight: bold;
+  color: var(--href-color)
 }
 
-.page-header__item { 
-  border-radius: 75%;
-}
 
 .page-footer {clear: both;
    display: -webkit-box;
@@ -181,7 +188,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .findme-footer{ 
-  color:#ffffff;
+  color:var(--primary-color);
   font-weight: bold;
 }
 
@@ -207,8 +214,9 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: -ms-flexbox; 
   display: flex;
    width: 100%; 
-   padding: 20px;
+   padding-right: 20px;
    font-weight: bold;
+   border-radius: 7px;
 }
 
 .page-header__item {
@@ -221,11 +229,20 @@ button:hover, button:focus, .button:hover, .button:focus {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navigation-list { 
   list-style-type: none;
+  font-size: larger;
 }
 
 .navigation-list li {
@@ -260,10 +277,8 @@ button:hover, button:focus, .button:hover, .button:focus {
   width: auto;
   margin: 0;
   padding: 10px; 
-  background-color: var(--dark-grey); 
-  opacity: 0.80;
   border-radius: 10px;
-  border:1px solid white;
+  border:1px solid var(--secondary-color);
 }
 
 .grid__item:last-child {
@@ -286,8 +301,8 @@ border: none;
 margin-top: 15px;
 padding-top: 20px;
 font-family: inherit; 
-background-color:#4a6b4c;
-color: rgb(0, 0, 0);
+background-color:var(--secondary-color);
+color: var(--light-white) !important;
 text-decoration: none;
 padding: 10px;
 border-radius: 3px;
@@ -304,6 +319,7 @@ transition: 0.20s;
 
 .contact__me__button{
   text-align: center;
+
 }
 
 .project__text{
@@ -345,7 +361,7 @@ transition: 0.20s;
   margin-top: 15px;
   padding-top: 20px;
   font-family: inherit; 
-  background-color:#5b855d;
+  background-color:var(--secondary-color);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -373,8 +389,8 @@ transition: 0.20s;
 }
 
 .information-input {
-  border: 2px solid #5b855d; 
-  border-radius: 10%; padding: 0.9em;
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px; padding: 0.9em;
 }
 
 .about-button{ 
@@ -383,7 +399,7 @@ transition: 0.20s;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-family: inherit; 
-  background-color:#5b855d;
+  background-color:var(--secondary-color);
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -435,10 +451,10 @@ color: #5b855d;
 .introduction-list {
   list-style-type: none;
   line-height: 2.0;
-  border: 1px solid #fff;
+  /* border: 1px solid var(--secondary-color); */
   border-radius: 10px;
-  background-color: var(--dark-grey); 
-  opacity: 0.80;
+  
+  
   padding: 10px;
   font-weight: bold;
   max-width: 800px;
