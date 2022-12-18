@@ -6,6 +6,7 @@ color:#032539
 
 .body_background{
   background-color: var(--light-white);  
+  margin-bottom: 3rem;
 }
 
 :root {
@@ -71,6 +72,11 @@ h3 {
   width: 25%;
 }
 
+section{
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+}
+
 .intro {
   font-size: 18px; 
   font-weight: bold;
@@ -114,8 +120,8 @@ a:active {
   width: 150px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
   transition: 0.20s opacity;
-
 }
+
 button:hover, button:focus, .button:hover, .button:focus { 
   cursor: pointer; 
   opacity:0.75;
@@ -134,7 +140,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   padding: 10px;
 }
 
-
 /* .background { 
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,13 +154,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   border-bottom: 1px solid var(--border-color); 
   margin-bottom: 15px;
   background: var(--primary-color);
-}
-
-.navigation-list-items { 
+  display: flex;
+  width: 100%; 
+  padding-right: 20px;
   font-weight: bold;
-  color: var(--href-color)
 }
-
 
 .page-footer {clear: both;
    display: flex;
@@ -184,23 +187,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* end of design for footer work page*/
 
-.profile {
-  max-width: 700px; 
-  margin: 0 auto;
-}
-
 .button-section { 
   max-width: 700px;
   margin: 0 auto;
   border-left: 10px;
-}
-
-.page-header { 
-  display: flex;
-   width: 100%; 
-   padding-right: 20px;
-   font-weight: bold;
-   border-radius: 7px;
 }
 
 .page-header__item {
@@ -214,9 +204,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   justify-content: flex-end;
 }
 
+/* navigation url designs in header */
 .navigation-list { 
   list-style-type: none;
   font-size: larger;
+  text-align: center;
 }
 
 .navigation-list li {
@@ -224,9 +216,11 @@ button:hover, button:focus, .button:hover, .button:focus {
    margin-left: 15px;
 }
 
-.work-page{ 
-  position: center;
+.navigation-list-items { 
+  font-weight: bold;
+  color: var(--href-color)
 }
+/* end of nav design */
 
 /* start grid fallback*/
 
@@ -236,6 +230,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 /* end grid fallback*/
 
+/* work page  */
 .projects { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -261,23 +256,24 @@ button:hover, button:focus, .button:hover, .button:focus {
 .find__me{
   font-weight: bold;
   margin-top: 15px;
+  text-align: center;
 }
-.contact__me{
 
-margin-top: 10px;
-text-align: center;
-border: none;
-margin-top: 15px;
-padding-top: 20px;
-font-family: inherit; 
-background-color:var(--secondary-color);
-color: var(--light-white) !important;
-text-decoration: none;
-padding: 10px;
-border-radius: 3px;
-width: 150px;
-border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
-transition: 0.20s;
+.contact__me{
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  margin-top: 15px;
+  padding-top: 20px;
+  font-family: inherit; 
+  background-color:var(--secondary-color);
+  color: var(--light-white) !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  width: 150px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
+  transition: 0.20s;
 }
 
 .contact__me:hover{ 
@@ -293,9 +289,7 @@ transition: 0.20s;
   text-align: center;
 }
 
-.find__me{
-  text-align: center;
-}
+/* end of work */
 
 .social-media{
   text-align: center;
@@ -306,7 +300,6 @@ transition: 0.20s;
 .contact-header{
   text-align: center;
 }
-
 
 .container-contact { 
   padding: 50px; 
@@ -350,6 +343,7 @@ transition: 0.20s;
 .information-input {
   border: 2px solid var(--secondary-color);
   border-radius: 12px; padding: 0.9em;
+  min-width: 211px;
 }
 
 .about-button{ 
@@ -364,7 +358,7 @@ transition: 0.20s;
   width: 150px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
   transition-duration: 0.4s;
-
+  padding-top: -15px;
 }
 
 .standard-label {
@@ -379,10 +373,9 @@ color: #5b855d;
   padding-right: 30px;
 }
 
-.about-button{
-  padding-top: -15px;
-}
-  /*this section is for about.html*/
+/* end of contact page */
+
+/*this section is for about.html*/
 .about-header{
   text-align: center;
 }
